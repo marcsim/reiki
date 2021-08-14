@@ -7,16 +7,20 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { DialogContactComponent } from './dialog-contact/dialog-contact.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    DialogContactComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

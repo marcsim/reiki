@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>Contact</h2>
+<mat-dialog-content class="mat-typography">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>Nom</mat-label>
+            <input matInput formControlName="nom">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Prénom</mat-label>
+            <input matInput formControlName="prenom">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Telephone</mat-label>
+            <input matInput formControlName="telephone">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Sujet</mat-label>
+            <input matInput formControlName="sujet">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Message</mat-label>
+            <textarea matInput formControlName="message"></textarea>
+        </mat-form-field>
+        <button mat-button>Envoyer</button>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

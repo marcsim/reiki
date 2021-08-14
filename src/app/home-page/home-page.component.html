@@ -2,32 +2,5 @@
     <h1>Site Reiki</h1>
 </div>
 <div>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <mat-form-field appearance="outline">
-            <mat-label>Nom</mat-label>
-            <input matInput formControlName="nom">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Prénom</mat-label>
-            <input matInput formControlName="prenom">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
-            <input matInput formControlName="email">
-            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Telephone</mat-label>
-            <input matInput formControlName="telephone">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Sujet</mat-label>
-            <input matInput formControlName="sujet">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Message</mat-label>
-            <textarea matInput formControlName="message"></textarea>
-        </mat-form-field>
-        <button type="submit">Contact</button>
-    </form>
+    <button mat-button (click)="openContact()">Contact</button>
 </div>
