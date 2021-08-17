@@ -13,6 +13,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { DialogTextComponent } from './dialog-text/dialog-text.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -20,7 +23,8 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [
     AppComponent,
     HomePageComponent,
-    DialogContactComponent
+    DialogContactComponent,
+    DialogTextComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatInputModule,
     HttpClientModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

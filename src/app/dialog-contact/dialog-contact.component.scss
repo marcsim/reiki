@@ -1,0 +1,18 @@
+.common-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .field {
+        width: 70%;
+
+        &.message {
+            height: 150px;
+        }
+    }
+
+    .submit_btn {
+        width: 40%;
+        background-color: #07c894;
+    }
+}
