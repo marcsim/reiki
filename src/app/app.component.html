@@ -1,18 +1,30 @@
-<mat-toolbar class="header">
-    <span>Anita Vivien</span>
-    <span>Reiki & soins energetique</span>
-    <button class="btn-contact" mat-button (click)="openContact()">Contact</button>
-</mat-toolbar>
-<app-home-page></app-home-page>
-<mat-toolbar class="footer">
-    <div class="firstBloc">
-        <span class="adress">
-            22 rue du pressoir, 49370 LA-POUËZE ERDRE EN ANJOU, FRANCE
-        </span>
+<div class="content">
+    <mat-toolbar class="header">
+        <div class="titre">
+            <span>Anita Vivien</span>
+            <span>Reiki & soins energetique</span>
+        </div>
+        <div class="btn">
+            <button class="btn-contact" mat-button (click)="openContact()">Contact</button>
+            <button mat-button class="btn_tarif" (click)="openTarif()">Tarif</button>
+        </div>
+    </mat-toolbar>
+    <div class="body">
+        <mat-divider></mat-divider>
+        <app-home-page></app-home-page>
     </div>
-    <div class="middle_footer_text">
-        <span (click)="openDialogText('Mentions légales', mentionLegale)">Mentions légales</span>
-        <span> - </span>
-        <span (click)="openDialogText('Politique de confidentialité', politiqueConfidentialite)">Politique de confidentialité</span>
+    <div class="footer">
+        <mat-toolbar class="footer">
+            <div class="firstBloc">
+                <span class="adress">
+                    22 rue du pressoir, 49370 LA-POUËZE ERDRE EN ANJOU, FRANCE
+                </span>
+            </div>
+            <div class="middle_footer_text">
+                <span (click)="openDialogText('Mentions légales', mentionLegale)">Mentions légales</span>
+                <span> - </span>
+                <span (click)="openDialogText('Politique de confidentialité', politiqueConfidentialite)">Politique de confidentialité</span>
+            </div>
+        </mat-toolbar>
     </div>
-</mat-toolbar>
+</div>

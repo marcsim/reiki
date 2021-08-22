@@ -6,8 +6,18 @@
 <mat-dialog-content class="mat-typography">
     <div>
         <h1>{{data.title}}</h1>
-        <div>
+        <div *ngIf="data.title !== 'Tarif'">
             <span>{{data.text}}</span>
+        </div>
+        <div *ngIf="data.title == 'Tarif'" class="tarif">
+                <!-- En tant que praticienne Reiki, je ne suis qu'un canal de l'énergie universelle. La guérison ne m'appartient pas. -->
+            <mat-list>
+                <mat-list-item> Une séance de reiki de 1h30: 50 € </mat-list-item>
+                <mat-list-item> Une séance de EFT de 1h: 50 € </mat-list-item>
+                <mat-list-item> Bébés et enfants jusqu'à 16 ans: 40 € </mat-list-item>
+                <mat-list-item> Animaux : 40 € </mat-list-item>
+                <mat-list-item> Séance à distance : 50 € </mat-list-item>
+            </mat-list>
         </div>
     </div>
 </mat-dialog-content>

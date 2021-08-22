@@ -1,20 +1,37 @@
-.header {
-    .btn-contact {
-        flex: 1 1 auto;
-        width: 30px;
+@import './../assets/scss/variables.scss';
 
-    }
-}
+.content {
+    background: $primary;
+    display: flex;
+    flex-direction: column;
 
-.footer {
-    .firstBloc {
-        .adress {
-            display: block;
-            width: 30%;
+    .header {
+        position: fixed;
+        height: 100px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        background: $primary;
+        padding-top: 20px;
+        z-index: 2;
+        // overflow: hidden;
+
+        .btn {
+            order: 1;
+            align-content: center;
         }
     }
 
-    .middle_footer_text {
-        margin: 0 auto;
+    .body {
+        order: 2;
+        align-self: center;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .footer {
+
     }
 }

@@ -26,6 +26,16 @@ export class AppComponent {
     this.router.navigate(['/home']);
   }
 
+  public openTarif(): void {
+    const dialogRef = this.dialog.open(DialogTextComponent, {
+      width: '650px',
+      data: {title: 'Tarif'}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    })
+  }
+
   public openContact(): void {
     const dialogRef = this.dialog.open(DialogContactComponent, {
       width: '650px'
