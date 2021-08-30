@@ -17,7 +17,9 @@ import { DialogTextComponent } from './dialog-text/dialog-text.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -28,6 +30,7 @@ import { MatListModule } from '@angular/material/list';
     HomePageComponent,
     DialogContactComponent,
     DialogTextComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent],

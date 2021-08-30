@@ -15,6 +15,10 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  public scrollToContent(): void {
+    document.getElementById('content').scrollTo({left: 0, top: 950, behavior: 'smooth'});
+  }
+
   public readMore(index: number): void {
     let $title: string = '';
     let $text: string = '';
