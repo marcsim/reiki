@@ -69,14 +69,14 @@ export class HomePageComponent implements OnInit {
       $title = `Handicapés`;
       $text = `Le Reiki est une méthode de soin énergétique répondant à un besoin de patients trop souvent négligé par la médecine moderne.
       Besoin d’autant plus important lorsque l’on est en situation de lourd handicap moteur ou mental.
-      Je peux exercer avec la personne handicapée même dans son contexte hospitalier .
+      Je peux exercer avec la personne handicapée même dans son contexte hospitalier.
       Le but est de vous accompagner vers un état d'esprit plus propice aux soins médicaux et à un état plus serein avec le corps en retrouvant la confiance et l'estime de soi.`;
     } else {
       $title = `Animaux`;
       $text = `Les animaux sont des êtres vivants, ils méritent notre attention et nos soins.
       Ils sont très réceptifs à l'apport d'énergie.
-      Tout animal peut donc être aidé par la méthode du Reiki pour tous signes de faiblesse physique, de difficulté relationnelle avec les autres, de douleur suite à une maladie, une blessure ou une intervention chirurgicale ou encore en fin de vie..
-      Ce soin énergétique de 20 min leur permettra de les apaiser et les soulager.
+      Tout animal peut donc être aidé par la méthode du Reiki pour tout signe de faiblesse physique, de difficulté relationnelle avec les autres, de douleur suite à une maladie, une blessure ou une intervention chirurgicale ou encore en fin de vie..
+      Ce soin énergétique de 20 min leur permettra de les apaiser et de les soulager.
       Je me déplace dans un rayon de 30 km si besoin auprès de l'animal, dans son cadre de vie.`;
     }
     const dialogRef = this.dialog.open(DialogTextComponent, {
@@ -85,6 +85,16 @@ export class HomePageComponent implements OnInit {
         title: $title,
         text: $text
       }
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    })
+  }
+
+  public openDialogText(title: string, text?: string): void {
+    const dialogRef = this.dialog.open(DialogTextComponent, {
+      width: '650px',
+      data: {title: title, text: text}
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

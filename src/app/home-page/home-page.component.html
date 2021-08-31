@@ -1,12 +1,12 @@
 <div class="body">
     <div class="presentation_bloc">
         <div class="text_presentation">
-            <h1 style="color: white; z-index: 1">Site Reiki</h1>
-            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+            <h1 style="text-align: center; color: white; z-index: 1">Reiki et soins énergétique</h1>
+            
         </div>
         <div class="arrow_container" (click)="scrollToContent()">
             <div class="content">
-              <p>Lire la suite</p>
+              <p style="font-size: 40px;">Lire la suite</p>
               <svg id="more-arrows">
                 <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
                 <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
@@ -29,7 +29,7 @@
                     <h3>Le reiki, une méthode de transmission d'énergie</h3>
                     Le reiki est un moyen de développement personnel et une approche thérapeutique manuelle pour une meilleure écoute du corps.
                     <br>
-                    <button mat-button (click)="readMore(1)" class="btn_read-more">Read more</button>
+                    <button mat-button (click)="readMore(1)" class="btn_read-more">Lire la suite</button>
                 </div>
             </div>
             <div class="bloc_card">
@@ -42,10 +42,11 @@
                 </div>
                 <div class="text_container">
                     <h3>Anita Vivien , praticienne de reiki à La Pouëze</h3>
-    
-                    Passionnée par le reiki et l’art japonais d'harmonisation et de guérison, praticienne qualifiée je vous reçois à La Pouëze Erdre en Anjou dans le département du Maine-et-Loire<span id="dots">...</span>
+                    <span>
+                        Passionnée par le reiki et l’art japonais d'harmonisation et de guérison, praticienne qualifiée, je vous reçois à La Pouëze Erdre en Anjou dans le département du Maine-et-Loire<span id="dots">...</span>
+                    </span>
                     <br>
-                    <button mat-button (click)="readMore(2)" class="btn_read-more">Read more</button>
+                    <button mat-button (click)="readMore(2)" class="btn_read-more">Lire la suite</button>
                 </div>
             </div>
             <div class="bloc_card">
@@ -61,7 +62,7 @@
                     Le reiki, énergie universelle
                     Cette technique japonaise de soin énergétique restaure et ré-harmonise l’équilibre physique, mental, émotionnel et spirituel<span id="dots">...</span>
                     <br>
-                    <button mat-button (click)="readMore(3)" class="btn_read-more">Read more</button>
+                    <button mat-button (click)="readMore(3)" class="btn_read-more">Lire la suite</button>
                 </div>
             </div>
         </div>
@@ -70,9 +71,9 @@
                 <div class="text_seance">
                     <h2>Déroulement d'une séance</h2>
                     <p>
-                        Une séance de Reiki se déroule en trois temps et dure environ 1h30.
+                        Une séance de Reiki se déroule en trois temps et dures environ 1h30.
                         Dans un premier temps, on prend une dizaine de minutes pour échanger sur les attentes et motivations du patient. Mon écoute est bienveillante, sans jugement.
-                        Le patient s'allonge par la suite sur la table de massage en restanthabillé (il ôtera simplement chaussures, bijoux, lunettes, ceintures).
+                        Le patient s'allonge par la suite sur la table de massage en restant habillé (il ôtera simplement chaussures, bijoux, lunettes, ceintures).
                         Confortablement allongé dans un endroit propice à la détente, le patient peut commencer à lâcher prise.
                     </p>
                     <p>
@@ -81,7 +82,7 @@
                         Après la séance, nous reprenons un moment pour échanger sur les ressentis, si la personne le souhaite.
                         Les séances de Reiki peuvent également se faire à distance (il est bien que la première se fasse au cabinet pour un premier échange).
                         Nous déterminons par la suite le jour et l'heure de la séance. Le patient s'allongera chez lui ou dans un endroit qui favorisera la détente et je pratiquerai la séance au même moment afin d'être connectée.
-                        Que vous soyez à La Pouëze, Segré, Lion-d’Angers, Montreuil-Juigné, Beaucouzé ou encore Avrillé, je peux répondre à vos questions ceoncernat les séances de Reiki.
+                        Que vous soyez à La Pouëze, Segré, Lion-d’Angers, Montreuil-Juigné, Beaucouzé ou encore Avrillé, je peux répondre à vos questions concernant les séances de Reiki.
                     </p>
                 </div>
                 <div class="img-seance">
@@ -89,19 +90,19 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card card_secondary">
             <figure class="image-block">
                 <h1>Bébés - enfants</h1>
                 <img src="./../../assets/enfant.jpg" alt="" />
                 <figcaption>
                     <h3>
-                        More Info
+                        Lire la suite
                     </h3>
                     <p>
                         Ce soin énergétique permet un travail sur les tracas du quotidien des plus jeunes comme les peurs ...
                     </p>
                     <button (click)="readMore(4)">
-                        More Info
+                        Lire la suite
                     </button>
                 </figcaption>
             </figure>
@@ -110,13 +111,13 @@
                 <img src="./../../assets/adulte.jpg" alt="" />
                 <figcaption>
                     <h3>
-                        More Info
+                        Lire la suite
                     </h3>
                     <p>
                         Le Reiki est une pratique naturelle basée sur l'apport d'énergie. 
                     </p>
                     <button (click)="readMore(5)">
-                        More Info
+                        Lire la suite
                     </button>
                 </figcaption>
             </figure>
@@ -125,13 +126,13 @@
                 <img src="./../../assets/handicape.jpg" alt="" />
                 <figcaption>
                     <h3>
-                        More Info
+                        Lire la suite
                     </h3>
                     <p>
                         Le Reiki est une méthode de soin énergétique répondant à un besoin de patients trop souvent négligé par la médecine moderne.
                     </p>
                     <button (click)="readMore(6)">
-                        More Info
+                        Lire la suite
                     </button>
                 </figcaption>
             </figure>
@@ -140,13 +141,13 @@
                 <img src="./../../assets/animaux.jpg" alt="" />
                 <figcaption>
                     <h3>
-                        More Info
+                        Lire la suite
                     </h3>
                     <p>
                         Les animaux sont des êtres vivants, ils méritent notre attention et nos soins.
                     </p>
                     <button (click)="readMore(7)">
-                        More Info
+                        Lire la suite
                     </button>
                 </figcaption>
             </figure>
@@ -163,12 +164,12 @@
                             </mat-panel-title>
                           </mat-expansion-panel-header>
                           <p>
-                            Acronyme d'"Emotional Freedom Techniques", l’EFT est une technique de libération émotionnelle  qui consiste en des « tapotements » vers les méridiens énergétiques chinois du corps. En effet, cette méthode psycho-corporelle consiste à réduire les tensions vécues par l’individu et à neutraliser des réactions émotionnelles conservées dans la mémoire; pouvant être d’émotions négatives.
-                            Concrètement, il s'agit de tapoter avec l’index et le majeur ou de frotter avec fermeté mais doucement certains points spécifiques situés sur les méridiens perturbés afin de vous aider à réduire les différents symptômes de l’anxiété, des phobies et des problèmes physiques liés au stress.
-                            Destinée non seulement aux adultes, cette technique s’avère aussi efficace pour les enfants car elle les aide à gérer rapidement et durablement de nombreux petits maux au quotidien : peurs ou phobies( du noir, des araignées, de l'école...), colères, moqueries, anxiété de séparation, pipi au lit,..
+                            Acronyme d'"Emotional Freedom Techniques", l’EFT est une technique de libération émotionnelle  qui consiste en des « tapotements » vers les méridiens énergétiques chinois du corps. En effet, cette méthode psycho-corporelle consiste à réduire les tensions vécues par l’individu et à neutraliser des réactions émotionnelles conservées dans la mémoire ; pouvant être d’émotions négatives.
+                            Concrètement, il s'agit de tapoter avec l’index et le majeur ou de frotter avec fermeté mais doucement certains points spécifiques situés sur les méridiens perturbés afin de vous aider pour réduire les différents symptômes de l’anxiété, des phobies et des problèmes physiques liés au stress.
+                            Destinée non seulement aux adultes, cette technique s’avère aussi efficace pour les enfants, car elle les aide à gérer rapidement et durablement de nombreux petits maux au quotidien : peurs ou phobies(du noir, des araignées, de l'école...), colères, moqueries, anxiété de séparation, pipi au lit, ...
                             "L'EFT n'a pas pour objectif de diagnostiquer ni de traiter des maladies physiques ou mentales quelles qu'elles soient. La consultation d'un médecin est nécessaire pour traiter de nombreuses pathologies", rappelle Jean-Marie Dabosville.
                             En revanche, les séances d’EFT peuvent  apporter souvent  un soulagement là où d'autres thérapies ont échoué. Cette méthode est notamment utile pour la gestion de toutes les émotions négatives telles que : tristesse,  peur, phobie, colère, dégoût, honte, anxiété, culpabilité, etc...,
-                            Elle permet également de résoudre certains problèmes physiques : douleurs, maigreur, obésité, etc, etc… ou à vous faire débarrasser de certaines manies : tabagisme, envies compulsives, bégaiement, etc.
+                            Elle permet également de résoudre certains problèmes physiques : douleurs, maigreur, obésité, etc, etc,. Ou à vous faire débarrasser de certaines manies : tabagisme, envies compulsives, bégaiement, etc,.
                         </p>
                         </mat-expansion-panel>
                         <mat-expansion-panel hideToggle>
@@ -178,12 +179,12 @@
                               </mat-panel-title>
                             </mat-expansion-panel-header>
                             <p>
-                                Se détendre et se libérer du stress face à une situation donnée : C'est la principale action de l'EFT :  cette méthode psycho-corporelle aide à réduire le stress ainsi que toutes les émotions qui lui sont associés.
+                                Se détendre et se libérer du stress face à une situation donnée : c'est la principale action de l'EFT :  cette méthode psycho-corporelle aide à réduire le stress ainsi que toutes les émotions qui lui sont associés.
                                 Se débarrasser de certaines phobies ou d’une peur persistante, intense et irrationnelle : aversion des araignées ou des serpents, claustrophobie, affolement à l’idée de prendre l’avion ou un ascenseur, peur panique de l’eau, phobie scolaire, agoraphobie, etc.
                                 Améliorer la confiance en soi :
-                                L’EFT permet d'affranchir un problème de mauvaise estime de soi. Cette méthode vous aide à reprogrammer votre subconscient et à améliorer votre estime personnelle afin de prendre confiance en vous.
+                                l’EFT permet d'affranchir un problème de mauvaise estime de soi. Cette méthode vous aide à reprogrammer votre subconscient et à améliorer votre estime personnelle afin de prendre confiance en vous.
                                 Se préparer à un examen (ou un entretien) :
-                                A l'approche du bac, du brevet, d'un gros contrôle, votre enfant panique ? L’EFT peut l'aider à se libérer du stress de l’événement. Elle est également utile pour ceux qui s’apprêtent à passer un entretien d'embauche.
+                                à l'approche du bac, du brevet, d'un gros contrôle, votre enfant panique ? L’EFT peut l'aider à se libérer du stress de l’événement. Elle est également utile pour ceux qui s’apprêtent à passer un entretien d'embauche.
                             </p>
                           </mat-expansion-panel>
                           <mat-expansion-panel hideToggle>
@@ -208,8 +209,8 @@
                             </mat-expansion-panel-header>
                             <p>
                                 Certification de Praticien Emotional Freedom Techniques
-                                Le centre de formation EFT représenté par Aurélie Pasilly atteste que j’ai suivi avec assiduité la formation de "Praticien en EFT" du 7 au 11 mai 2018 et le 20 Janvier 2019. 
-                                Ayant démontré avec succès mes connaissances, ce centre de formation EFT m’a délivré la Certification de Praticien en EFT (niveau 1,2,3)  à Rennes, le 21 Janvier 2019.
+                                Le centre de formation EFT représenté par Aurélie Pasilly atteste que j’ai suivi avec assiduité la formation de "Praticien en EFT" du 7 au 11 mai 2018 et le 20 janvier 2019. 
+                                Ayant démontré avec succès mes connaissances, ce centre de formation EFT m’a délivré la Certification de Praticien en EFT (niveau 1,2,3)  à Rennes, le 21 janvier 2019.
                             </p>
                           </mat-expansion-panel>
                     </mat-accordion>
@@ -217,6 +218,35 @@
             </div>
         </div>
     </div>
-    
+    <div class="footer">
+        <div class="text_container">
+            <a class="adress" href="https://www.google.com/maps/place/22+Rue+du+Pressoir,+49370+Erdre-en-Anjou/@47.5540188,-0.802294,17z/data=!3m1!4b1!4m5!3m4!1s0x480884e888998d87:0x236779214340fab6!8m2!3d47.5540188!4d-0.8001053">
+                <i class="fas fa-map-marker-alt"></i>
+                22 rue du pressoir, 
+                <br> 
+                <span style="padding-left: 30px;">49370 LA-POUËZE ERDRE EN ANJOU, FRANCE</span>
+            </a>
+            <a class="tel" href="tel:+33651290928">
+                <i class="fas fa-phone-alt"></i>
+                0651290928
+            </a>
+            <a class="mail" href="mailto:contact@reiki.fr">
+                <i class="fas fa-envelope"></i>
+                contact@reiki.fr
+            </a>
+        </div>
+        <div class="middle_footer_text">
+            <span (click)="openDialogText('Mentions légales')">Mentions légales</span>
+            <span> - </span>
+            <span (click)="openDialogText('Politique de confidentialité')">Politique de confidentialité</span>
+        </div>
+        <div class="text_container horaire">
+            <h3>Horaire</h3>
+            <mat-list>
+                <mat-list-item style="margin: 0"> Du lundi au vendredi de 8h à 20h </mat-list-item>
+                <mat-list-item> Le samedi de 8h à 13h </mat-list-item>
+            </mat-list>
+        </div>
+    </div>
 </div>
 

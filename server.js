@@ -32,17 +32,17 @@ app.post('/sendmail', (req, res) => {
 async function sendMail(data, callback) {
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: 'ssl0.ovh.net',
         port: 587,
-        secure: false,
+        secure: true,
         auth : {
-            user: 'marcantoine495@gmail.com',
-            pass: 'azerty28ZFGI',
+            user: 'contact@reiki49.fr',
+            pass: 'azertyReiki49',
         },
     });
     let mailOptions = await transporter.sendMail({
-        from: 'reiki adresse', // sender address
-        to: 'marc-antoine.simon3@orange.fr', // list of receivers
+        from: data.email,
+        to: 'contact@reiki49.fr', // list of receivers
         subject: 'reiki', // Subject line
         text: "Hello world?", // plain text body
         html: '<div><ul><li>nom :'+ data.nom +'</li><li>prenom :'+ data.prenom +'</li><li>email :'+ data.email +'</li><li>telephone :'+ data.telephone +'</li><li>sujet :'+ data.sujet +'</li><li>message :'+ data.message +'</li></ul></div>', // html body
