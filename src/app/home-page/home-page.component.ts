@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Meta, Title } from '@angular/platform-browser';
 import { DialogTextComponent } from '../dialog-text/dialog-text.component';
 
 @Component({
@@ -10,13 +11,22 @@ import { DialogTextComponent } from '../dialog-text/dialog-text.component';
 export class HomePageComponent implements OnInit {
   
   constructor(
-    private dialog: MatDialog
-  ) {}
+    private dialog: MatDialog,
+    private meta: Meta,
+    private title: Title
+  ) {
+    this.meta.addTags([
+      {name: 'description', content: 'Site de conseil en Reiki et en soins énergétique. Ce site met en avant des prestations de massage et de soins énergétique'},
+      {name: 'author', content: 'Marc-antoine SIMON'},
+      {name: 'keywords', content: 'reiki, reiki formation, reiki danger, reiki usui, reiki à distance, reiki avis, reiki zen meditation music, reiki bienfaits, reiki 3 minutes, reiki 3 min, reiki paris, reiki forum, reiki musique, reiki définition, reiki signification, reiki lyo, reiki youtub, reiki symboles, reiki bordeaux, reiki massag, reiki karun, reiki c\'est quoi, reiki toulouse, reiki music, reiki montpellier, reiki musique clochette 3 minutes, reiki secte, reiki image, reiki energie, reiki symbols'}
+    ]);
+    this.setTitle('Reiki et soins énergétique');
+  }
 
   ngOnInit(): void {}
 
-  public scrollToContent(): void {
-    document.getElementById('content').scrollTo({left: 0, top: 950, behavior: 'smooth'});
+  public setTitle( newTitle: string) {
+    this.title.setTitle( newTitle );
   }
 
   public readMore(index: number): void {

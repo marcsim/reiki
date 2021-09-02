@@ -9,8 +9,10 @@ html, body {
     display: flex;
     flex-direction: row;
     min-height: auto;
+    font-family: 'Montserrat', sans-serif;
 
     .header {
+        font-family: 'Montserrat', sans-serif;
         position: fixed;
         height: 100px;
         top: 0;
@@ -32,7 +34,7 @@ html, body {
             padding-right: 10px;
             text-decoration: none;
             color: black;
-            font-family: Roboto, "Helvetica Neue", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 500;
         }
@@ -44,5 +46,6 @@ html, body {
         margin-top: 5%;
         width: 100%;
         height: 100%;
+        font-family: 'Montserrat', sans-serif;
     }
 }
