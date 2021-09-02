@@ -21,8 +21,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 
 
 
@@ -51,13 +49,7 @@ import { environment } from '../environments/environment';
     MatDividerModule,
     MatListModule,
     MatExpansionModule,
-    MatTabsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-      // Register the ServiceWorker as soon as the app is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    })
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
