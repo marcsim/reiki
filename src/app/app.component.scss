@@ -1,29 +1,23 @@
 @import './../assets/scss/variables.scss';
 
-html, body {
-    height: 100%;
-}
-
 .content {
     background: #beb48e;
-    display: flex;
-    flex-direction: row;
     min-height: auto;
     font-family: 'Montserrat', sans-serif;
 
     .header {
         font-family: 'Montserrat', sans-serif;
         position: fixed;
-        height: 100px;
+        width: 100% !important;
+        height: 150px;
         top: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
         background: #beb48e;
         padding-top: 20px;
         z-index: 4;
-        // overflow: hidden;
+
+        h1 {
+            text-align: center;
+        }
 
         .btn {
             order: 1;
@@ -44,7 +38,7 @@ html, body {
         order: 2;
         align-self: center;
         margin-top: 5%;
-        width: 100%;
+        // width: 100%;
         height: 100%;
         font-family: 'Montserrat', sans-serif;
     }

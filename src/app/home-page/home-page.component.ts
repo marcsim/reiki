@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Meta, Title } from '@angular/platform-browser';
 import { DialogTextComponent } from '../dialog-text/dialog-text.component';
 
 @Component({
@@ -12,56 +11,19 @@ export class HomePageComponent implements OnInit {
   
   constructor(
     private dialog: MatDialog,
-    private meta: Meta,
-    private title: Title
-  ) {
-    this.meta.addTags([
-      {name: 'description', content: 'Site de conseil en Reiki et en soins énergétique. Ce site met en avant des prestations de massage et de soins énergétique'},
-      {name: 'author', content: 'Marc-antoine SIMON'},
-      {name: 'keywords', content: 'reiki, reiki formation, reiki danger, reiki usui, reiki à distance, reiki avis, reiki zen meditation music, reiki bienfaits, reiki 3 minutes, reiki 3 min, reiki paris, reiki forum, reiki musique, reiki définition, reiki signification, reiki lyo, reiki youtub, reiki symboles, reiki bordeaux, reiki massag, reiki karun, reiki c\'est quoi, reiki toulouse, reiki music, reiki montpellier, reiki musique clochette 3 minutes, reiki secte, reiki image, reiki energie, reiki symbols'}
-    ]);
-    this.setTitle('Reiki et soins énergétique');
-  }
+  ) {}
 
   ngOnInit(): void {}
-
-  public setTitle( newTitle: string) {
-    this.title.setTitle( newTitle );
-  }
 
   public readMore(index: number): void {
     let $title: string = '';
     let $text: string = '';
     if (index === 1) {
       $title = `Le reiki, une méthode de transmission d'énergie`;
-      $text = `Le reiki est un moyen de développement personnel et une approche thérapeutique manuelle pour une meilleure écoute du corps.
-      C’est également une préparation émotionnelle face à certaines situations qui permet de faire appel aux ressources naturelles que chaque personne possèdent. 
-      Cette thérapie par apposition des mains permet de transmettre l'énergie vitale pour libérer les blocages et de développer le processus d'auto-guérison. 
-      Praticienne qualifiée, mon cabinet est situé à La Pouëze près de Segré, Lion-d’Angers, Montreuil-Juigné, Beaucouzé ou encore Avrillé, je propose des soins à titre préventif pour favoriser votre capital santé (apporter un bien-être, prendre un moment pour soi...) mais aussi à titre curatif suite à une maladie ou à un accident. 
-      En pratique régulière, le reiki se base sur la pose des mains de votre énergéticienne à distance ou sur le corps ce qui permet d’apporter l’énergie qui va se diriger naturellement vers les zones qui en ont le plus besoin.`;
     } else if (index === 2) {
       $title = `Anita Vivien , praticienne de reiki à La Pouëze`;
-      $text = `Passionnée par le reiki et l’art japonais d'harmonisation et de guérison, praticienne qualifiée je vous reçois à La Pouëze Erdre en Anjou dans le département du Maine-et-Loire.
-      Je propose des séances de reiki adaptées à chaque personne afin de vous aider à retrouver votre capitale santé (apporter un bien-être, prendre un moment pour soi, et aider le corps à s'auto-guérir).
-      Née en 1972 dans les Mauges, j'ai travaillé dans le commerce pendant 28 ans.
-      De part mon expérience de vie, j'ai eu la chance de découvrir le monde et les bienfaits du Reiki.
-      L'énergie reiki ma permis d'améliorer mon quodidien, d'accepter les moments plus difficiles de ma vie, d'avoir une autre vision de mon corps, de mon mental.
-      Pour cela j'ai suivi les formations :
-          REIKI USUI 1 : shoden
-          REIKI USUI 2 : okuden
-          REIKI USUI 3 : shinpiden  ainsi que le REIKI KARUNA® 1et 2 qui complète et renforce le reiki usui.
-      Après avoir compris les vertus bienfaisantes du reiki, j'ai décidée d'en faire mon métier pour vous apporter cette belle énergie de vie qui aidera votre corps et votre mental à se ressourcer et à retrouver une vie harmonieuse.
-      Praticienne qualifiée, je vous reçois à mon domicile dans le département du Maine-et-Loire et j'ai la possibilité de me déplacer chez vous ou en institut dans un rayon de 30 km autour de La Pouëze, notamment à Segré, au Lion-d’Angers, à Montreuil-Juigné, à Beaucouzé ou encore à Avrillé.`;
     } else if (index === 3) {
       $title = `Pourquoi ?`;
-      $text = `Le reiki, énergie universelle
-      Cette technique japonaise de soin énergétique restaure et ré-harmonise l’équilibre physique, mental, émotionnel et spirituel.
-      Cette technique naturelle par apposition des mains permet de canaliser l’énergie vitale pour libérer les blocages et accélérer le processus d’auto-guérison et stimuler notre système immunitaire.
-      Le reiki est un allié très puissant pour aider à gérer la douleur, le stress, la dépression, les troubles physiques, émotionnels, les infections, les dépendances, les troubles du sommeil...
-      Le reiki aide dans la maladie, limite les effets secondaires des chimiothérapies, radiothérapies.
-      Aide en fin de vie, libère les angoisses.
-      Permet de retrouver la sérénité et la joie de vivre... 
-      Que vous soyez à La Pouëze, Segré, Lion-d’Angers, Montreuil-Juigné, Beaucouzé ou encore Avrillé, bénéficiez d'une séance de Reiki adaptée à vos besoins.`;
     } else if (index === 4) {
       $title = `Bébés - enfants`;
       $text = `Ce soin énergétique permet un travail sur les tracas du quotidien des plus jeunes comme les peurs, les réveils nocturnes ou difficultés d'endormissement, l'hyperactivité, la confiance en soi, la concentration, la préparation aux examens scolaires, les traumatismes vécus comme une séparation, un divorce …

@@ -1,12 +1,10 @@
-<div class="body">
-    <div class="presentation_bloc">
-        <div class="text_presentation">
-            <h1 style="text-align: center; color: white; z-index: 1">Reiki et soins énergétique</h1>
-            
+<div class="body" fxfxFlex="100" fxLayout="column">
+    <div class="presentation_bloc" fxFlex="100%">
+        <div class="text_presentation" fxFlex="100">
+            <h1 style="text-align: center; color: white; z-index: 1;">Reiki et soins énergétique</h1>
         </div>
         <div class="arrow_container">
             <div class="content">
-              <p style="font-size: 40px;">Lire la suite</p>
               <svg id="more-arrows">
                 <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
                 <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
@@ -15,9 +13,9 @@
             </div>
         </div>
     </div>
-    <div class="container" id="content">
-        <div class="card">
-            <div class="bloc_card">
+    <div class="container" id="content" fxFlex="100" fxLayout="column">
+        <div class="card" fxFlex="100">
+            <div class="bloc_card" fxFlex="20">
                 <div class="img-container">
                     <div class="img-inner">
                         <div class="inner-skew">
@@ -32,7 +30,7 @@
                     <button mat-button (click)="readMore(1)" class="btn_read-more">Lire la suite</button>
                 </div>
             </div>
-            <div class="bloc_card">
+            <div class="bloc_card" fxFlex="20">
                 <div class="img-container">
                     <div class="img-inner">
                         <div class="inner-skew">
@@ -49,7 +47,7 @@
                     <button mat-button (click)="readMore(2)" class="btn_read-more">Lire la suite</button>
                 </div>
             </div>
-            <div class="bloc_card">
+            <div class="bloc_card" fxFlex="20">
                 <div class="img-container">
                     <div class="img-inner">
                         <div class="inner-skew">
@@ -66,8 +64,8 @@
                 </div>
             </div>
         </div>
-        <div class="seance">
-            <div class="contenu_seance">
+        <div class="seance" fxFlex="100">
+            <div class="contenu_seance" fxLayout="row">
                 <div class="text_seance">
                     <h2>Déroulement d'une séance</h2>
                     <p>
@@ -90,10 +88,10 @@
                 </div>
             </div>
         </div>
-        <div class="card card_secondary">
+        <div class="card card_secondary" fxFlex="100" fxLayout="row"> 
             <figure class="image-block">
                 <h1>Bébés - enfants</h1>
-                <img src="./../../assets/enfant.jpg" alt="" />
+                <img src="./../../assets/enfant.jpg" alt="image main enfant" />
                 <figcaption>
                     <h3>
                         Lire la suite
@@ -101,14 +99,15 @@
                     <p>
                         Ce soin énergétique permet un travail sur les tracas du quotidien des plus jeunes comme les peurs ...
                     </p>
-                    <button (click)="readMore(4)">
+                    <!-- (click)="readMore(4)" -->
+                    <button >
                         Lire la suite
                     </button>
                 </figcaption>
             </figure>
             <figure class="image-block">
                 <h1>Adultes</h1>
-                <img src="./../../assets/adulte.jpg" alt="" />
+                <img src="./../../assets/adulte.jpg" alt="image main couple" />
                 <figcaption>
                     <h3>
                         Lire la suite
@@ -116,14 +115,15 @@
                     <p>
                         Le Reiki est une pratique naturelle basée sur l'apport d'énergie. 
                     </p>
-                    <button (click)="readMore(5)">
+                    <!-- (click)="readMore(5)" -->
+                    <button >
                         Lire la suite
                     </button>
                 </figcaption>
             </figure>
             <figure class="image-block">
                 <h1>Handicapés</h1>
-                <img src="./../../assets/handicape.jpg" alt="" />
+                <img src="./../../assets/handicape.jpg" alt="image fauteuil roulant" />
                 <figcaption>
                     <h3>
                         Lire la suite
@@ -131,14 +131,15 @@
                     <p>
                         Le Reiki est une méthode de soin énergétique répondant à un besoin de patients trop souvent négligé par la médecine moderne.
                     </p>
-                    <button (click)="readMore(6)">
+                    <!-- (click)="readMore(6)" -->
+                    <button >
                         Lire la suite
                     </button>
                 </figcaption>
             </figure>
         </div>
-        <div class="seance_eft">
-            <div class="contenu_eft">
+        <div class="seance_eft" fxFlex="100">
+            <div class="contenu_eft" fxLayoutAlign.gt-sm="center">
                 <div class="text_seance_eft">
                     <h2>Séances d’EFT à La Pouëze</h2>
                     <mat-accordion>
@@ -203,8 +204,9 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="text_container">
+    <div class="footer" fxFlex="100" fxLayout="row" fxLayoutAlign.gt-xs="space-around center">
+        <div fxFlex="5"></div>
+        <div class="text_container" fxLayout="column" fxFlex="45">
             <a class="adress" href="https://www.google.com/maps/place/22+Rue+du+Pressoir,+49370+Erdre-en-Anjou/@47.5540188,-0.802294,17z/data=!3m1!4b1!4m5!3m4!1s0x480884e888998d87:0x236779214340fab6!8m2!3d47.5540188!4d-0.8001053">
                 <i class="fas fa-map-marker-alt"></i>
                 22 rue du pressoir, 
@@ -220,13 +222,13 @@
                 contact@reiki.fr
             </a>
         </div>
-        <div class="middle_footer_text">
+        <div fxFlex="10">
+            
+        </div>
+        <div class="middle_footer_text" fxFlex="45">
             <span (click)="openDialogText('Mentions légales')">Mentions légales</span>
             <span> - </span>
             <span (click)="openDialogText('Politique de confidentialité')">Politique de confidentialité</span>
-        </div>
-        <div class="text_container horaire">
-            <h3>Test</h3>
         </div>
     </div>
 </div>
