@@ -42,7 +42,7 @@ export class DialogContactComponent implements OnInit {
 
 
   public sendMailContact(mail: any): void {
-    this.sendEmail("http://localhost:8080/sendmail", mail).subscribe(
+    this.sendEmail("https://www.reiki49.fr/sendmail", mail).subscribe(
       data => {
         let res: any = data;
         console.log('email envoyé');
