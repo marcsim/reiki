@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(
     private dialog: MatDialog,
     private meta: Meta,
-    private title: Title
+    private title: Title,
   ) {
     this.mentionLegale = "";
     this.politiqueConfidentialite = "";
@@ -29,8 +29,12 @@ export class AppComponent {
       { name: 'date', content: '2021-05-17', scheme: 'YYYY-MM-DD' },
       { charset: 'UTF-8' },
       { name: 'copyright', content:'Anita vivien' },
+      { property: 'og:title', content: 'Reiki et soins énergétiques | Pour enfants, adultes, handicapés'},
+      { property: 'og:description', content: 'Site de conseil en Reiki et en soins énergétique. Ce site met en avant des prestations de massage et de soins énergétiques'},
+      { property: 'og:url', content: 'https://wwww.reiki49.fr'},
+      { property: 'og:site_name', content: 'Reiki49'}
     ]);
-    this.setTitle('Reiki et soins énergétiques par Anita vivien | Pour enfants, adultes et handicapés | Pratique de l\'eft');
+    this.setTitle('Reiki et soins énergétiques | Pour enfants, adultes et handicapés');
   }
 
   public setTitle( newTitle: string) {
@@ -42,9 +46,7 @@ export class AppComponent {
       width: '650px',
       data: {title: 'Tarif'}
     });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    })
+    dialogRef.afterClosed().subscribe(result => {})
   }
 
   public openContact(): void {

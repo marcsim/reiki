@@ -1,10 +1,8 @@
 @import './../../assets/scss/variables.scss';
 
-$color-2: #1abc9c;
-
 .body {
-    font-family: 'Montserrat', sans-serif;
-    background: #7bbab5;
+    font-family: $font-family;
+    background: $secondary;
 
     .presentation_bloc {
         position: relative;
@@ -18,7 +16,7 @@ $color-2: #1abc9c;
             padding-left: 5%;
             h1 {
                 padding-top: 20%;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-family;
                 font-size: 50px;
                 font-weight: bold;
             }
@@ -123,13 +121,13 @@ $color-2: #1abc9c;
                     margin: -120px 0px 0px 0px;
                     line-height: 19px;
                     font-size: 14px;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $font-family;
     
-                    h3 {
+                    h2 {
                         margin: 20px 0px 10px 0px;
                         color: #04bcff;
                         font-size: 18px;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $font-family;
                     }
     
                     .btn_read-more {
@@ -139,7 +137,7 @@ $color-2: #1abc9c;
                         color: #fff;
                         text-transform: uppercase;
                         font-size: 1rem;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $font-family;
                         letter-spacing: .15rem;
                         transition: all .3s;
                         position: relative;
@@ -198,8 +196,8 @@ $color-2: #1abc9c;
                         bottom: 0;
                     }
                 }
-                h1 {
-                    font-family: 'Montserrat', sans-serif;
+                h2 {
+                    font-family: $font-family;
                     position: absolute;
                     top: 50px;
                     left: 20px;
@@ -230,11 +228,11 @@ $color-2: #1abc9c;
                     h3 {
                         margin: 0 0 20px;
                         padding: 0;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $font-family;
                     }
                     p {
                         font-size: 14px;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $font-family;
                         line-height: 1.75;
                     }
                     button {
@@ -244,12 +242,12 @@ $color-2: #1abc9c;
                         justify-content: center;
                         margin: 10px 0 0;
                         padding: 10px 30px;
-                        background-color: $color-2;
+                        background-color: $secondary;
                         border: none;
                         border-radius: 5px;
                         color: white;
                         font-size: 15px;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $font-family;
                     }
                 }
             }
@@ -268,7 +266,7 @@ $color-2: #1abc9c;
             .contenu_seance {
     
                 .text_seance {
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $font-family;
                     font-size: 18px;
                     width: 50%;
                     padding: 2%;
@@ -300,7 +298,7 @@ $color-2: #1abc9c;
             h3 {
                 text-align: left;
                 font-weight: 600;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-family;
             }
             .contenu_eft {
 
@@ -309,7 +307,7 @@ $color-2: #1abc9c;
                     width: 50%;
                     padding: 2%;
                     h2 {
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $font-family;
 
                     }
                 }
@@ -328,7 +326,7 @@ $color-2: #1abc9c;
 
         .text_container {
             color: black;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-family;
             font-size: 20px;
             font-weight: 500;
 
@@ -345,7 +343,7 @@ $color-2: #1abc9c;
                 h3 {
                     font-size: 24px;
                     text-align: center;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $font-family;
                 }
 
                 mat-list-item {
@@ -356,7 +354,7 @@ $color-2: #1abc9c;
         }
         .middle_footer_text {
             margin-top: 30px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-family;
             font-size: 20px;
             font-weight: 500;
         }

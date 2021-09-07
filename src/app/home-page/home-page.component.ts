@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DialogTextComponent } from '../dialog-text/dialog-text.component';
 
 @Component({
@@ -58,9 +59,7 @@ export class HomePageComponent implements OnInit {
         text: $text
       }
     });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    })
+    dialogRef.afterClosed().subscribe(result => {})
   }
 
   public openDialogText(title: string, text?: string): void {
