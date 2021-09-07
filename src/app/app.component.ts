@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 import { DialogContactComponent } from './dialog-contact/dialog-contact.component';
 import { DialogTextComponent } from './dialog-text/dialog-text.component';
 
@@ -13,12 +13,28 @@ export class AppComponent {
 
   public mentionLegale: string; 
   public politiqueConfidentialite: string;
-
   constructor(
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private meta: Meta,
+    private title: Title
   ) {
     this.mentionLegale = "";
     this.politiqueConfidentialite = "";
+    this.meta.addTags([
+      {name: 'description', content: 'Site de conseil en Reiki et en soins énergétique. Ce site met en avant des prestations de massage et de soins énergétiques'},
+      {name: 'author', content: 'Marc-antoine simon'},
+      {name: 'keywords', content: 'reiki, reiki formation, reiki danger, reiki usui, reiki à distance, reiki avis, reiki zen meditation music, reiki bienfaits, reiki 3 minutes, reiki 3 min, reiki paris, reiki forum, reiki musique, reiki définition, reiki signification, reiki lyo, reiki youtub, reiki symboles, reiki bordeaux, reiki massag, reiki karun, reiki c\'est quoi, reiki toulouse, reiki music, reiki montpellier, reiki musique clochette 3 minutes, reiki secte, reiki image, reiki energie, reiki symbols'},
+      { name: 'robots', content: 'index, follow' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'date', content: '2021-05-17', scheme: 'YYYY-MM-DD' },
+      { charset: 'UTF-8' },
+      { name: 'copyright', content:'Anita vivien' },
+    ]);
+    this.setTitle('Reiki et soins énergétiques par Anita vivien | Pour enfants, adultes et handicapés | Pratique de l\'eft');
+  }
+
+  public setTitle( newTitle: string) {
+    this.title.setTitle( newTitle );
   }
 
   public openTarif(): void {

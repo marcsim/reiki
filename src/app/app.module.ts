@@ -23,10 +23,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { MatTabsModule } from '@angular/material/tabs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +32,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PageNotFoundComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'Reiki49' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
