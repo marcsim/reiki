@@ -1,25 +1,24 @@
-<div class="body" fxfxFlex="100" fxLayout="column">
-    <div class="presentation_bloc" fxFlex="100%">
-        <div class="text_presentation" fxFlex="100">
-            <h1 style="text-align: center; color: white; z-index: 1;">Reiki et soins énergétique</h1>
+<div class="body" fxFlex="100" fxLayout.xl-xs="grid" fxLayout="column">
+    <div class="presentation_bloc" fxFlex="100" fxLayout="row">
+        <div class="text_presentation" fxFlex="100" fxLayout="column" fxLayoutAlign="center ">
+            <h1>Bienvenue </h1>
+            <h2>Reiki et soins énergétique</h2>
         </div>
         <div class="arrow_container">
             <div class="content">
-              <svg id="more-arrows">
-                <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
-                <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
-                <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
-              </svg>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
             </div>
         </div>
     </div>
     <div class="container" id="content" fxFlex="100" fxLayout="column">
-        <div class="card" fxFlex="100">
+        <div class="card" fxLayout.xs="column" fxLayout.xl-xs="grid" fxFlex.xs fxFlex.xl-md="100" fxLayoutAlign.md-xs="space-between" >
             <div class="bloc_card" fxFlex="20">
                 <div class="img-container">
                     <div class="img-inner">
                         <div class="inner-skew">
-                            <img src="../../assets/photo1.jpg" alt="photo"/>
+                            <img src="../../assets/card1.jpg" alt="photocard" width="150%" height="250px" />
                         </div>
                     </div>
                 </div>
@@ -36,7 +35,7 @@
                 <div class="img-container">
                     <div class="img-inner">
                         <div class="inner-skew">
-                            <img src="../../assets/photo1.jpg" alt="photo"/>
+                            <img src="../../assets/card1.jpg" alt="photocard" width="150%" height="250px"/>
                         </div>
                     </div>
                 </div>
@@ -53,7 +52,7 @@
                 <div class="img-container">
                     <div class="img-inner">
                         <div class="inner-skew">
-                            <img src="../../assets/photo1.jpg" alt="photo"/>
+                            <img src="../../assets/card1.jpg" alt="photocard" width="150%" height="250px"/>
                         </div>
                     </div>
                 </div>
@@ -68,17 +67,20 @@
                 </div>
             </div>
         </div>
-        <div class="seance" fxFlex="100">
-            <div class="contenu_seance" fxLayout="row">
-                <div class="text_seance">
+        <div class="seance" fxLayout="column">
+            <div class="contenu_seance" fxLayout.xs="column" fxLayout.xl-xs="grid" fxFlex.xs fxFlex.xl-md="100">
+                <div class="img-seance" fxFlex="50">
+                    <img src="./../../assets/discussion.jpg" alt="image de discussion">
+                </div>
+                <div class="text_seance" fxLayout="column" fxFlex="50" fxLayoutAlign.xs="center ">
                     <h2>Déroulement d'une séance</h2>
                     <p>
                         Une séance de Reiki se déroule en trois temps et dures environ 1h30.
                         Dans un premier temps, on prend une dizaine de minutes pour échanger sur les attentes et motivations du patient. Mon écoute est bienveillante, sans jugement.
                         Le patient s'allonge par la suite sur la table de massage en restant habillé (il ôtera simplement chaussures, bijoux, lunettes, ceintures).
                         Confortablement allongé dans un endroit propice à la détente, le patient peut commencer à lâcher prise.
-                    </p>
-                    <p>
+                        <br>
+                        <br>
                         Une fois centrée, je commence la séance en apposant à distance mes mains de la tête jusqu'aux pieds. Chaque apposition des mains dure une à plusieurs minutes suivant les besoins énergétiques du corps. Tout au long de la séance, la personne s'apaise. Elle peut s'endormir, pleurer, sentir des picotements, du chaud, du froid ou rien. Mais l'énergie Reiki est toujours efficace et va directement où le corps en a le plus besoin.
                         Suivant certaines pathologies, il faudra plusieurs séances pour que le travail se fasse en profondeur et durablement.
                         Après la séance, nous reprenons un moment pour échanger sur les ressentis, si la personne le souhaite.
@@ -87,15 +89,12 @@
                         Que vous soyez à La Pouëze, Segré, Lion-d’Angers, Montreuil-Juigné, Beaucouzé ou encore Avrillé, je peux répondre à vos questions concernant les séances de Reiki.
                     </p>
                 </div>
-                <div class="img-seance">
-                    <img src="./../../assets/discussion.jpg">
-                </div>
             </div>
         </div>
-        <div class="card card_secondary" fxFlex="100" fxLayout="row"> 
-            <figure class="image-block">
+        <div class="card card_secondary" fxLayout.xs="column" fxLayout.xl-xs="grid" fxFlex.xs fxFlex.xl-md="100" fxLayoutAlign.md-xs="center " > 
+            <figure class="image-block" fxFlex="20">
                 <h2>Bébés - enfants</h2>
-                <img src="./../../assets/enfant.jpg" alt="image main enfant" />
+                <img src="./../../assets/enfant.jpg" alt="image main enfant" height="100%" />
                 <figcaption>
                     <h3>
                         Lire la suite
@@ -109,9 +108,9 @@
                     </button>
                 </figcaption>
             </figure>
-            <figure class="image-block">
+            <figure class="image-block" fxFlex="20">
                 <h2>Adultes</h2>
-                <img src="./../../assets/adulte.jpg" alt="image main couple" />
+                <img src="./../../assets/adulte.jpg" alt="image main couple" height="100%" />
                 <figcaption>
                     <h3>
                         Lire la suite
@@ -125,9 +124,9 @@
                     </button>
                 </figcaption>
             </figure>
-            <figure class="image-block">
+            <figure class="image-block" fxFlex="20">
                 <h2>Handicapés</h2>
-                <img src="./../../assets/handicape.jpg" alt="image fauteuil roulant" />
+                <img src="./../../assets/handicape.jpg" alt="image fauteuil roulant" height="100%"/>
                 <figcaption>
                     <h3>
                         Lire la suite
@@ -142,9 +141,9 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="seance_eft" fxFlex="100">
-            <div class="contenu_eft" fxLayoutAlign.gt-sm="center">
-                <div class="text_seance_eft">
+        <div class="seance_eft" fxFlex="100" fxLayout="row">
+            <div class="contenu_eft" fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+                <div class="text_seance_eft" fxFlex="100">
                     <h2>Séances d’EFT à La Pouëze</h2>
                     <mat-accordion>
                         <mat-expansion-panel hideToggle>
@@ -208,28 +207,24 @@
             </div>
         </div>
     </div>
-    <div class="footer" fxFlex="100" fxLayout="row" fxLayoutAlign.gt-xs="space-around center">
-        <div fxFlex="5"></div>
-        <div class="text_container" fxLayout="column" fxFlex="45">
-            <a class="adress" href="https://www.google.com/maps/place/22+Rue+du+Pressoir,+49370+Erdre-en-Anjou/@47.5540188,-0.802294,17z/data=!3m1!4b1!4m5!3m4!1s0x480884e888998d87:0x236779214340fab6!8m2!3d47.5540188!4d-0.8001053">
+    <div class="footer" fxFlex="100" fxLayout.xs="column" fxLayoutAlign.xs="space-around" fxLayoutAlign.xl-md="space-around">
+        <div class="text_container" fxLayout="column" fxFlex="50" fxFlex.xs >
+            <a fxFlex="100" fxLayout.xs="column" class="adress" href="https://www.google.com/maps/place/22+Rue+du+Pressoir,+49370+Erdre-en-Anjou/@47.5540188,-0.802294,17z/data=!3m1!4b1!4m5!3m4!1s0x480884e888998d87:0x236779214340fab6!8m2!3d47.5540188!4d-0.8001053">
                 <i class="fas fa-map-marker-alt"></i>
                 22 rue du pressoir, 
                 <br> 
                 <span style="padding-left: 30px;">49370 LA-POUËZE ERDRE EN ANJOU, FRANCE</span>
             </a>
-            <a class="tel" href="tel:+33651290928">
+            <a fxFlex="100" fxLayout.xs="column" fxFlex="100" fxLayout.xs="column" class="tel" href="tel:+33651290928">
                 <i class="fas fa-phone-alt"></i>
                 0651290928
             </a>
-            <a class="mail" href="mailto:contact@reiki49.fr">
+            <a fxFlex="100" fxLayout.xs="column" class="mail" href="mailto:contact@reiki49.fr">
                 <i class="fas fa-envelope"></i>
                 contact@reiki.fr
             </a>
         </div>
-        <div fxFlex="10">
-            
-        </div>
-        <div class="middle_footer_text" fxFlex="45">
+        <div class="middle_footer_text" fxFlex="50" fxLayout.xs="column">
             <span (click)="openDialogText('Mentions légales')">Mentions légales</span>
             <span> - </span>
             <span (click)="openDialogText('Politique de confidentialité')">Politique de confidentialité</span>

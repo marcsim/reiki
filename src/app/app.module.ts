@@ -19,9 +19,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HomePageComponent,
     DialogContactComponent,
     DialogTextComponent,
-    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Reiki49' }),
@@ -47,7 +47,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatExpansionModule,
     MatTabsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],

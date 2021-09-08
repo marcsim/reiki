@@ -69,7 +69,7 @@ async function sendMail(data, callback) {
       secure: true,
       auth : {
           user: 'contact@reiki49.fr',
-          pass: 'azertyReiki49',
+          pass: 'azerty28ZFGI',
       },
   });
   let mailOptions = await transporter.sendMail({

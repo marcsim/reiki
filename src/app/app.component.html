@@ -1,18 +1,16 @@
-<div class="content" fxLayout.gt-xs="grid" fxLayout="column" fxLayoutGap="8px">
-    <mat-toolbar class="header" fxFlex="100%" fxLayout="column">
-        <h1 class="titre" fxFlex="100%">
+<div class="content" fxLayout.xl-xs="grid" fxLayout="column" fxLayoutGap="8px">
+    <mat-toolbar class="header" fxFlex="100" fxLayout="column">
+        <h1 class="titre" fxFlex="100">
             <div>
                 <span>Anita Vivien</span>
                 <br>
                 <span>Reiki & soins energetique</span>
             </div>
         </h1>
-        <div class="btn" fxFlex="100%">
+        <div class="btn" fxFlex="100">
             <button mat-button class="btn_tarif" (click)="openTarif()">Tarif</button>
             <button class="btn-contact" mat-button (click)="openContact()">Contact</button>
         </div>
     </mat-toolbar>
-    <div class="body">
-        <app-home-page fxFill></app-home-page>
-    </div>
+    <app-home-page class="body" fxFill></app-home-page>
 </div>
