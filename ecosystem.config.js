@@ -13,7 +13,7 @@ module.exports = {
       host : '152.228.173.68',
       ref  : 'origin/main',
       repo : 'git@github.com/marcsim/reiki.git',
-      path : '/var/www/my-repository',
+      path : '/var/www/reiki',
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
