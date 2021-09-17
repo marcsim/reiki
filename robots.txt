@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.reiki49.fr/sitemap.xml
+Sitemap: https://www.reiki49.fr/sitemap.xml

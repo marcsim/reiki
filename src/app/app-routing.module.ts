@@ -5,10 +5,9 @@ import { InformationPageComponent } from './information-page/information-page.co
 
 const routes: Routes = [
   {
-    path: 'accueil',
+    path: '',
     component: HomePageComponent
   },
-  { path: '',   redirectTo: 'accueil', pathMatch: 'full' },
   { path: '**', component: HomePageComponent },  // Wildcard route for a 404 page
 
   // {
