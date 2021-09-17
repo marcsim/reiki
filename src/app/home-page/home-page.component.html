@@ -1,8 +1,11 @@
 <div class="body" fxFlex="100" fxLayout.xl-xs="grid" fxLayout="column">
     <div class="presentation_bloc" fxFlex="100" fxLayout="row">
         <div class="text_presentation" fxFlex="100" fxLayout="column" fxLayoutAlign="center ">
-            <h1>Bienvenue </h1>
-            <h2>Reiki et soins énergétique</h2>
+            <div class="box-title" fxFlex="50" > 
+                <h1>Bienvenue</h1>
+                <br>
+                <h2>Reiki et soins énergétique</h2>
+            </div>
         </div>
         <div class="arrow_container">
             <div class="content">
@@ -42,7 +45,7 @@
                 <div class="text_container">
                     <h2>Anita Vivien , praticienne de reiki à La Pouëze</h2>
                     <p>
-                        Passionnée par le reiki et l’art japonais d'harmonisation et de guérison, praticienne qualifiée, je vous reçois à La Pouëze Erdre en Anjou dans le département du Maine-et-Loire<span id="dots">...</span>
+                        Passionnée par le reiki et l’art japonais d'harmonisation et de guérison, praticienne qualifiée, je vous reçois à La Pouëze Erdre en Anjou<span id="dots">...</span>
                     </p>
                     <br>
                     <button mat-button (click)="readMore(2)" class="btn_read-more">Lire la suite</button>
@@ -102,8 +105,7 @@
                     <p>
                         Ce soin énergétique permet un travail sur les tracas du quotidien des plus jeunes comme les peurs ...
                     </p>
-                    <!-- (click)="readMore(4)" -->
-                    <button>
+                    <button (click)="readMore(4)">
                         Lire la suite
                     </button>
                 </figcaption>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { DialogTextComponent } from '../dialog-text/dialog-text.component';
 
 @Component({
@@ -12,6 +12,7 @@ export class HomePageComponent implements OnInit {
   
   constructor(
     private dialog: MatDialog,
+    private router: Router
   ) {}
 
   ngOnInit(): void {}
@@ -20,6 +21,7 @@ export class HomePageComponent implements OnInit {
     let $title: string = '';
     let $text: string = '';
     if (index === 1) {
+      // this.router.navigate(['/information', index]);
       $title = `Le reiki, une méthode de transmission d'énergie`;
     } else if (index === 2) {
       $title = `Anita Vivien , praticienne de reiki à La Pouëze`;
@@ -38,19 +40,12 @@ export class HomePageComponent implements OnInit {
       Une séance est avant tout un moment pour revenir à soi, libérer son corps et son esprit des tensions du quotidien, des énergies "usées", dissoudre les blocages.
       Prenez le temps de prendre le recul nécessaire, de mettre votre mental au repos.
       Le soin Reiki permet de gagner en vitalité, en énergie, de soulager vos tensions et vos douleurs, de vous "reconnecter" à vous-même et de reprendre confiance en vous et goût à la vie...`;
-    } else if (index === 6) {
+    } else {
       $title = `Handicapés`;
       $text = `Le Reiki est une méthode de soin énergétique répondant à un besoin de patients trop souvent négligé par la médecine moderne.
       Besoin d’autant plus important lorsque l’on est en situation de lourd handicap moteur ou mental.
       Je peux exercer avec la personne handicapée même dans son contexte hospitalier.
       Le but est de vous accompagner vers un état d'esprit plus propice aux soins médicaux et à un état plus serein avec le corps en retrouvant la confiance et l'estime de soi.`;
-    } else {
-      $title = `Animaux`;
-      $text = `Les animaux sont des êtres vivants, ils méritent notre attention et nos soins.
-      Ils sont très réceptifs à l'apport d'énergie.
-      Tout animal peut donc être aidé par la méthode du Reiki pour tout signe de faiblesse physique, de difficulté relationnelle avec les autres, de douleur suite à une maladie, une blessure ou une intervention chirurgicale ou encore en fin de vie..
-      Ce soin énergétique de 20 min leur permettra de les apaiser et de les soulager.
-      Je me déplace dans un rayon de 30 km si besoin auprès de l'animal, dans son cadre de vie.`;
     }
     const dialogRef = this.dialog.open(DialogTextComponent, {
       width: '900px',

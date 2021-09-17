@@ -23,10 +23,6 @@ export class DialogContactComponent implements OnInit {
     this.initFormContact();
   }
 
-  public sendEmail(url, data): Observable<any> {
-    return this.http.post(url, data);
-  }
-
   public onSubmit() {
     console.log(this.form.value);
     let mail = {
@@ -42,15 +38,14 @@ export class DialogContactComponent implements OnInit {
 
 
   public sendMailContact(mail: any): void {
-    this.sendEmail("https://www.reiki49.fr/sendmail", mail).subscribe(
-      data => {
-        let res: any = data;
+    console.log('mail', mail);
+      this.http.post('https://152.228.173.68/sendmail', mail).subscribe(
+      res => {
+        console.log('res', res);
         console.log('email envoyé');
       },
       err => {
         console.log(err);
-      }, () => {
-        console.log('test');
       }
     );
   }

@@ -16,9 +16,16 @@ $base: 1rem;
         }
 
         .text_presentation {
-            // margin-top: 20%;
-            line-height: 10em;
-            padding-bottom: 10%;
+            @media (min-width: 760px) {
+                .box-title {
+                    padding-top: 5%;
+                    margin-left: 30%;
+                    margin-right: 30%;
+                    background-color: white;
+                    opacity: 0.8;
+                }
+            }
+
             h1, h2 {
                 text-align: center;
                 color: #2c3e50; 
@@ -26,6 +33,10 @@ $base: 1rem;
                 font-family: $font-family;
                 font-size: 50px;
                 font-weight: bold;
+
+                @media (max-width: 760px) {
+                    line-height: 50px;
+                }
             }
         }
 
@@ -36,7 +47,7 @@ $base: 1rem;
 
             .content {
                 position: absolute;
-                left: 50%;
+                left: 48%;
                 top: 55%;
                 transform: translate(-50%, -50%);
 
@@ -109,12 +120,13 @@ $base: 1rem;
         padding-bottom: 5%;
 
         .card {
+            margin-top: 50px;
             width: 100%;
             justify-content: space-around;
             height: auto; 
             
             @media (max-width: 760px) { 
-                margin-left: 10%;
+                margin-left: 2%;
                 margin-bottom: 10%;
             }
 
@@ -166,13 +178,14 @@ $base: 1rem;
     
                     h2 {
                         margin: 20px 0px 10px 0px;
-                        color: #04bcff;
+                        color: #2c3e50;
                         font-size: 18px;
+                        font-weight: bold;
                         font-family: $font-family;
                     }
     
                     .btn_read-more {
-                        margin-top: 10px;
+                        margin-bottom: 0;
                         display: inline-block;
                         border-radius: 10rem;
                         color: #fff;
@@ -214,82 +227,92 @@ $base: 1rem;
                         }
                     }
                 }
-            } 
-    
-            figure {
-                justify-content: space-around;
-                position: relative;
-                display: flex;
-                // align-items: center;
-                // justify-content: center;
-                width: 300px;
-                height: 667px;
-                border-radius: 10px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                overflow: hidden;
-                &:hover {
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                    img {
-                        padding-right: 10px;
-                        transform: scale(1.25);
-                    }
-                    figcaption {
-                        bottom: 0;
-                    }
-                }
-                h2 {
-                    font-family: $font-family;
-                    position: absolute;
-                    top: 50px;
-                    left: 20px;
-                    margin: 0;
-                    padding: 0;
-                    color: white;
-                    font-size: 40px;
-                    font-weight: 100;
-                    line-height: 1;
-                }
-                img {
-                    // height: 100%;
-                    transition: 0.25s;
-                }
+            }
 
-                figcaption {
-                    position: absolute;
-                    bottom: -50%;
-                    left: 0;
-                    width: 90%;
-                    margin: 0;
-                    padding: 30px;
-                    background-color: rgba(black,0.85);
-                    box-shadow: 0 0 20px rgba(black,0.4);
-                    color: white;
-                    line-height: 1;
-                    transition: 0.25s;
-                    h3 {
-                        margin: 0 0 20px;
+            &.card_secondary {
+                justify-content: center;
+                margin-bottom: 50px;
+                figure {
+                    justify-content: space-around;
+                    position: relative;
+                    display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    width: 300px;
+                    height: 667px;
+                    border-radius: 10px;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                    overflow: hidden;
+                    &:hover {
+                        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                        img {
+                            padding-right: 10px;
+                            transform: scale(1.25);
+                        }
+                        figcaption {
+                            bottom: 0;
+                        }
+                    }
+                    h2 {
+                        font-family: $font-family;
+                        position: absolute;
+                        top: 50px;
+                        left: 20px;
+                        margin: 0;
                         padding: 0;
-                        font-family: $font-family;
-                    }
-                    p {
-                        font-size: 14px;
-                        font-family: $font-family;
-                        line-height: 1.75;
-                    }
-                    button {
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin: 10px 0 0;
-                        padding: 10px 30px;
-                        background-color: $secondary;
-                        border: none;
-                        border-radius: 5px;
                         color: white;
-                        font-size: 15px;
-                        font-family: $font-family;
+                        font-size: 40px;
+                        font-weight: 100;
+                        line-height: 1;
+                    }
+                    img {
+                        // height: 100%;
+                        transition: 0.25s;
+                    }
+    
+                    figcaption {
+                        position: absolute;
+                        bottom: -50%;
+                        left: 0;
+                        width: 90%;
+                        margin: 0;
+                        padding: 30px;
+                        background-color: rgba(black,0.85);
+                        box-shadow: 0 0 20px rgba(black,0.4);
+                        color: white;
+                        line-height: 1;
+                        transition: 0.25s;
+                        h3 {
+                            margin: 0 0 20px;
+                            padding: 0;
+                            font-family: $font-family;
+                        }
+                        p {
+                            font-size: 14px;
+                            font-family: $font-family;
+                            line-height: 1.75;
+                        }
+                        button {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 10px 0 0;
+                            padding: 10px 30px;
+                            background-color: $secondary;
+                            border: none;
+                            border-radius: 5px;
+                            color: white;
+                            font-size: 15px;
+                            font-family: $font-family;
+                        }
+                    }
+                }
+    
+                @media (max-width: 760px) {
+                    figure {
+                        width: 80%;
                     }
                 }
             }
@@ -334,7 +357,10 @@ $base: 1rem;
                     font-family: $font-family;
                     font-size: 18px;
                     width: 70%;
-                    // padding: 2%;
+                    h2 {
+                        font-family: $font-family;
+                        font-size: 20px;
+                    }
 
                     @media (max-width: 760px) {
                     }
@@ -360,7 +386,7 @@ $base: 1rem;
                 padding: 2%;
                 h2 {
                     font-family: $font-family;
-
+                    font-size: 20px;
                 }
             }
         }  
@@ -373,6 +399,7 @@ $base: 1rem;
         background: $primary;
         z-index: 4;
         padding-top: 3%;
+        padding-bottom: 50px;
         line-height: 25px;
 
         @media (max-width: 760px) {

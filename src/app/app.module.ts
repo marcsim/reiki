@@ -23,6 +23,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { InformationPageComponent } from './information-page/information-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { environment } from '../environments/environment';
     HomePageComponent,
     DialogContactComponent,
     DialogTextComponent,
+    InformationPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Reiki49' }),
