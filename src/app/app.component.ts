@@ -23,7 +23,7 @@ export class AppComponent {
     this.meta.addTags([
       {name: 'description', content: 'Site de conseil en Reiki et en soins énergétique. Ce site met en avant des prestations de massage et de soins énergétiques'},
       {name: 'author', content: 'Marc-antoine simon'},
-      {name: 'keywords', content: 'reiki, reiki formation, reiki danger, reiki usui, reiki à distance, reiki avis, reiki zen meditation music, reiki bienfaits, reiki 3 minutes, reiki 3 min, reiki paris, reiki forum, reiki musique, reiki définition, reiki signification, reiki lyo, reiki youtub, reiki symboles, reiki bordeaux, reiki massag, reiki karun, reiki c\'est quoi, reiki toulouse, reiki music, reiki montpellier, reiki musique clochette 3 minutes, reiki secte, reiki image, reiki energie, reiki symbols'},
+      {name: 'keywords', content: 'reiki, reiki formation, reiki danger, reiki usui, reiki à distance, reiki avis, reiki zen meditation music, reiki bienfaits, reiki 3 minutes, reiki 3 min, reiki paris, reiki forum, reiki musique, reiki définition, reiki signification, reiki lyo, reiki youtub, reiki symboles, reiki bordeaux, reiki massag, reiki karun, reiki c\'est quoi, reiki toulouse, reiki music, reiki montpellier, reiki musique clochette 3 minutes, reiki secte, reiki image, reiki energie, reiki symbols, japon, massage, soins énergétiques, énergie, méridien, point méridien, matière, âme, esprit, énergie vitale, traditionnel, force de l\'esprit, méditation, calme, relaxation, reikiologie'},
       { name: 'robots', content: 'index, follow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'date', content: '2021-05-17', scheme: 'YYYY-MM-DD' },

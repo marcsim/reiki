@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -12,19 +13,24 @@ import { Observable } from 'rxjs';
 export class DialogContactComponent implements OnInit {
 
   public form: FormGroup;
+  public durationInSeconds = 5;
 
   constructor(
     private fb: FormBuilder,
     private http: HttpClient,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private snackBar: MatSnackBar,
   ) { }
 
   ngOnInit(): void {
     this.initFormContact();
   }
 
+  public save(): void {
+    this.onSubmit();
+  }
+
   public onSubmit() {
-    console.log(this.form.value);
     let mail = {
       nom: this.form.value.nom,
       prenom: this.form.value.prenom,
@@ -38,19 +44,19 @@ export class DialogContactComponent implements OnInit {
 
 
   public sendMailContact(mail: any): void {
-    console.log('mail', mail);
-      this.http.post('https://152.228.173.68/sendmail', mail).subscribe(
+      // this.http.post('http://localhost:4200/sendmail', mail).subscribe(
+      this.http.post('https://152.228.173.68:4000/', mail).subscribe(
       res => {
-        console.log('res', res);
-        console.log('email envoyé');
+        this.openSnackBar('Message envoyé', 'success');
       },
       err => {
+        this.openSnackBar('Erreur dans l\'envoi du message', 'error');
         console.log(err);
       }
     );
   }
 
-  public initFormContact(): void {
+  private initFormContact(): void {
     this.form = this.fb.group({
       nom: new FormControl(''),
       prenom: new FormControl(''),
@@ -58,6 +64,13 @@ export class DialogContactComponent implements OnInit {
       telephone: new FormControl(''),
       sujet: new FormControl(''),
       message: new FormControl('')
+    });
+  }
+
+  private openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      horizontalPosition: 'center',
+      verticalPosition: 'top',
     });
   }
 

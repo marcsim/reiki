@@ -34,8 +34,9 @@
                     <mat-label>Message</mat-label>
                     <textarea matInput formControlName="message"></textarea>
                 </mat-form-field>
-                <button mat-button class="submit_btn">Envoyer</button>
+                <button mat-button class="submit_btn" (click)="save()">Envoyer</button>
             </form>
+            <!-- <p>Bientôt disponible</p> -->
         </mat-tab>
         <mat-tab label="Coordonnées">
             <mat-list class="information">
@@ -59,7 +60,7 @@
                 <mat-list-item>
                     <a class="mail" href="mailto:contact@reiki49.fr">
                         <i class="fas fa-envelope"></i>
-                        contact@reiki.fr
+                        contact@reiki49.fr
                     </a>
                 </mat-list-item>
             </mat-list>

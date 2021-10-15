@@ -42,3 +42,8 @@
     transform: rotate(270deg);
     margin-left: 20%;
 }
+
+mat-dialog-content {
+    max-height: 70vh !important;
+    overflow: auto !important;
+}
