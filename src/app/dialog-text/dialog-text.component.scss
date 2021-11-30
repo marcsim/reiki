@@ -1,5 +1,13 @@
+@import './../../assets/scss/variables.scss';
+
 .tarif {
     margin-left: auto;
     width: 80%;
     font-size: 20px;
+}
+
+mat-dialog-content {
+    // overflow-y: hidden; 
+    font-size: 18px; 
+    font-family: $font-family;
 }

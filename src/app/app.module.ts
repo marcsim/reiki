@@ -24,15 +24,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { InformationPageComponent } from './information-page/information-page.component';
-
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     DialogContactComponent,
     DialogTextComponent,
-    InformationPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'Reiki49' }),

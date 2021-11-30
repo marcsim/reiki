@@ -1,0 +1,103 @@
+{
+  "configVersion": 1,
+  "timestamp": 1637608095595,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.42b05cdbc8dc051678d1.js",
+        "/manifest.webmanifest",
+        "/polyfills.00096ed7d93ed26ee6df.js",
+        "/runtime.7b63b9fd40098a2e8207.js",
+        "/styles.0ad82f7d35f352826d7b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/arbre-banniere.5a418a7c832029125bf7.jpg",
+        "/assets/adulte.jpg",
+        "/assets/animaux.jpg",
+        "/assets/arbre-banniere.jpg",
+        "/assets/card1.jpg",
+        "/assets/carteDeVisite.jpg",
+        "/assets/discussion.jpg",
+        "/assets/enfant.jpg",
+        "/assets/handicape.jpg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/photo2.jpg",
+        "/assets/scss/variables.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/arbre-banniere.5a418a7c832029125bf7.jpg": "df260102f7f2c0abb4fea925bf5171e131aae999",
+    "/assets/adulte.jpg": "1424a0f0d61e8d8957b3bdd7c3fbfd9301aefa71",
+    "/assets/animaux.jpg": "f1cfb71ae98dba424a4adbec3db7885eb3c14b9c",
+    "/assets/arbre-banniere.jpg": "df260102f7f2c0abb4fea925bf5171e131aae999",
+    "/assets/card1.jpg": "6d63fe5712eee43169eb25f2ec9304b7f97a9d7a",
+    "/assets/carteDeVisite.jpg": "b0398aeca0e9c02391bb713187f19b23e587d2de",
+    "/assets/discussion.jpg": "e13997146ea3faf43768b6069bb7b975434a6df6",
+    "/assets/enfant.jpg": "2a40f3a42fe083aa0ec28ecccf7b213435ec2ff9",
+    "/assets/handicape.jpg": "181817f3b4b28abb7453c4fef2bf1646d67b2eff",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/photo2.jpg": "0d220af8f53804292bf9524f8fd85bc17aa64610",
+    "/assets/scss/variables.scss": "2b3616a355c7e4e18458df0189b816143329dba0",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "0a06306f2912dd508d41ffa4f0b8185df53914df",
+    "/main.42b05cdbc8dc051678d1.js": "3bc8723c58145dfd7f86179d75b6a08765d2e203",
+    "/manifest.webmanifest": "b4b80999ef1f4c3978f64f591b389d4505bfb757",
+    "/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.0ad82f7d35f352826d7b.css": "dd05a8c0575c71a898fcb2c1d0fb03481dd18ee7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

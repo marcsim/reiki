@@ -42,15 +42,14 @@ export class DialogContactComponent implements OnInit {
     this.sendMailContact(mail);
   }
 
-
   public sendMailContact(mail: any): void {
       // this.http.post('http://localhost:4200/sendmail', mail).subscribe(
-      this.http.post('https://152.228.173.68:4000/', mail).subscribe(
+      this.http.post('https://www.reiki49.fr/', mail).subscribe(
       res => {
-        this.openSnackBar('Message envoyé', 'success');
+        this.openSnackBar('Message envoyé', 'OK');
       },
       err => {
-        this.openSnackBar('Erreur dans l\'envoi du message', 'error');
+        this.openSnackBar('Erreur dans l\'envoi du message', 'OK');
         console.log(err);
       }
     );
