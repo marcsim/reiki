@@ -79,15 +79,15 @@ async function sendMail(data, callback) {
     }
   });
   let mailOptions = await transport.sendMail({
-    from: data.email,
-    to: 'marc-antoine.simon3@orange.fr',
+    from: 'site reiki49',
+    to: 'reiki49.contact@gmail.com',
     subject: 'site Reiki49',
     text: "Message du site Reiki49", // plain text body
     html: '<div><ul><li>nom :'+ data.nom +'</li><li>prenom :'+ data.prenom +'</li><li>email :'+ data.email +'</li><li>telephone :'+ data.telephone +'</li><li>sujet :'+ data.sujet +'</li><li>message :'+ data.message +'</li></ul></div>', // html body
   });
 
     let info = await transport.sendMail(mailOptions);
-    callback(info);
+    callback(mailOptions);
 }
 
 function run(): void {

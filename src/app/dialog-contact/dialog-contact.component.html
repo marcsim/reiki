@@ -8,7 +8,7 @@
 <mat-dialog-content class="mat-typography">
     <mat-tab-group>
         <mat-tab label="Envoyer un message">
-            <form class="common-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+            <form class="common-form" [formGroup]="form">
                 <mat-form-field class="field" appearance="outline">
                     <mat-label>Nom</mat-label>
                     <input matInput formControlName="nom">
